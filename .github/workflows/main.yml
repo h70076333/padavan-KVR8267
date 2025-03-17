@@ -1,4 +1,4 @@
-name: TX1806
+name: NX18NNW
 on: 
   release:
     types: [published]
@@ -37,7 +37,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: TX1806
+        TNAME: NX18NNW
       run: |
         cd /opt/padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
