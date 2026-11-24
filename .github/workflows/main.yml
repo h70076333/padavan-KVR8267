@@ -1,5 +1,5 @@
 #修改TNAME: RM2100 中的RM2100为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: GHL
+name: ZTE_E8820S
 on: 
   #release:
   #  types: [published]
@@ -38,7 +38,7 @@ jobs:
     
     - name: Build Firmware
       env:
-        TNAME: GHL
+        TNAME: ZTE_E8820S
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
