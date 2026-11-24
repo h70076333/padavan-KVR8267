@@ -79,6 +79,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_HXCLI=y" >> .config #wirguard
         echo "CONFIG_FIRMWARE_INCLUDE_NTWON=y" >> .config #gecoac
         echo "CONFIG_FIRMWARE_INCLUDE_N2V6=y" >> .config #smartdns
+        echo "CONFIG_FIRMWARE_INCLUDE_NELINK=y" >> .config #smartdns
         echo "CONFIG_FIRMWARE_INCLUDE_HXSDWAN=y" >> .config #ttyd
         echo "CONFIG_FIRMWARE_INCLUDE_VNTS=y" >> .config #iperf3
         echo "CONFIG_FIRMWARE_INCLUDE_ETINK=y" >> .config #socat
