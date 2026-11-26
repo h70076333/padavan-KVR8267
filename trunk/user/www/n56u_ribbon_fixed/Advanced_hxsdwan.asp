@@ -324,6 +324,7 @@ function button_hxwan_status() {
 	<input type="hidden" name="next_page" value="">
 	<input type="hidden" name="next_host" value="">
 	<input type="hidden" name="sid_list" value="HXSDWAN;LANHostConfig;General;">
+	<input type="hidden" name="group_id" value="HXSDWANLrout;HXSDWANmapp">
 	<input type="hidden" name="action_mode" value="">
 	<input type="hidden" name="action_script" value="">
 	<input type="hidden" name="hxwan_routenum_x_0" value="<% nvram_get_x("HXSDWANLrout", "hxwan_routenum_x"); %>" readonly="1" />
@@ -364,13 +365,11 @@ function button_hxwan_status() {
 									<p>SD-WAN智能组网是一个易于配置异地组网 直连技术支持IPV6【安卓 电脑 MACOS 】：<a href="https://pan.baidu.com/s/1JR-JZm09dJ3Og487o9b2AQ?pwd=3388" target="blank">点击百度网盘下载</a></div>
 									</p>
 										</div>
-		<table width="100%" cellpadding="4" cellspacing="0" class="table">
-	<tr>
-	<th><#running_status#>
-	</th>
-	<td colspan="4" id="hxwan_status"></td>
-	</tr><td colspan="4"></td>
-	<tr>
+										<table width="100%" align="center" cellpadding="4" cellspacing="0" class="table">
+									<tr> <th><#running_status#></th>
+                                            <td id="hxwan_status" colspan="3"></td>
+                                        </tr><td></td><td></td><td></td>
+										<tr>
 										<tr>
 										<th width="30%" style="border-top: 0 none;">启用组网客户端</th>
 											<td style="border-top: 0 none;">
