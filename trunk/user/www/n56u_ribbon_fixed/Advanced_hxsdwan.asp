@@ -23,7 +23,6 @@
 <script type="text/javascript" src="/help.js"></script>
 <script>
 var $j = jQuery.noConflict();
-
 <% hxwan_status(); %>
 <% login_state_hook(); %>
 $j(document).ready(function() {
@@ -180,10 +179,10 @@ function markrouteRULES(o, c, b) {
 			document.form.hxwan_ip_x_0.select();
 			return false;
 		}else{
-			for(i=0; i<m_inroulist.length; i++){
-				if(document.form.hxwan_route_x_0.value==m_inroulist[i][1]) {
-				if(document.form.hxwan_ip_x_0.value==m_inroulist[i][2]) {
-					alert('<#JS_duplicate#>' + ' (' + m_inroulist[i][1] + ')' );
+			for(i=0; i<m_routelist.length; i++){
+				if(document.form.hxwan_route_x_0.value==m_routelist[i][1]) {
+				if(document.form.hxwan_ip_x_0.value==m_routelist[i][2]) {
+					alert('<#JS_duplicate#>' + ' (' + m_routelist[i][1] + ')' );
 					document.form.hxwan_route_x_0.focus();
 					document.form.hxwan_ip_x_0.select();
 					return false;
@@ -199,16 +198,16 @@ function markrouteRULES(o, c, b) {
 
 function showROUListi(){
 	var code = '<table width="100%" cellspacing="0" cellpadding="4" class="table table-list">';
-	if(m_inroulist.length == 0)
+	if(m_routelist.length == 0)
 		code +='<tr><td colspan="5" style="text-align: center;"><div class="alert alert-info"><#IPConnection_VSList_Norule#></div></td></tr>';
 	else{
-	    for(var i = 0; i < m_inroulist.length; i++){
+	    for(var i = 0; i < m_routelist.length; i++){
 		code +='<tr id="rowrl' + i + '">';
-		code +='<td width="28%">&nbsp;' + m_inroulist[i][0] + '</td>';
-		code +='<td width="38%">&nbsp;' + m_inroulist[i][1] + '</td>';
-		code +='<td colspan="2" width="40%">' + m_inroulist[i][2] + '</td>';
+		code +='<td width="28%">&nbsp;' + m_routelist[i][0] + '</td>';
+		code +='<td width="38%">&nbsp;' + m_routelist[i][1] + '</td>';
+		code +='<td colspan="2" width="40%">' + m_routelist[i][2] + '</td>';
 		code +='<td width="50%"></td>';
-		code +='<center><td width="20%" style="text-align: center;"><input type="checkbox" name="HXSDWANLrout_s" value="' + m_inroulist[i][minroulist_ifield] + '" onClick="changeBgColorrl(this,' + i + ');" id="check' + m_inroulist[i][minroulist_ifield] + '"></td></center>';
+		code +='<center><td width="20%" style="text-align: center;"><input type="checkbox" name="HXSDWANLrout_s" value="' + m_routelist[i][mroutelist_ifield] + '" onClick="changeBgColorrl(this,' + i + ');" id="check' + m_routelist[i][mroutelist_ifield] + '"></td></center>';
 		
 		code +='</tr>';
 	    }
@@ -328,6 +327,7 @@ function button_hxwan_status() {
 	<input type="hidden" name="action_mode" value="">
 	<input type="hidden" name="action_script" value="">
 	<input type="hidden" name="hxwan_routenum_x_0" value="<% nvram_get_x("HXSDWANLrout", "hxwan_routenum_x"); %>" readonly="1" />
+	<input type="hidden" name="hxwan_mappnum_x_0" value="<% nvram_get_x("HXSDWANmapp", "hxwan_mappnum_x"); %>" readonly="1" />
 
 	<div class="container-fluid">
 	<div class="row-fluid">
