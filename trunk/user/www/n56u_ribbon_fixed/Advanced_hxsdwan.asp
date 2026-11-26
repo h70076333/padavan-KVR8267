@@ -54,12 +54,12 @@ if(m_routelist.length > 0){
 		m_routelist[i][mroutelist_ifield] = i;
 	}
 }
-
 var isMenuopen = 0;
 function initial(){
 	show_banner(2);
 	show_menu(5,33,0);
 	fill_status(hxwan_status());
+	showMRULESList();
 	show_footer();
 	if (!login_safe())
         		textarea_scripts_enabled(0);
