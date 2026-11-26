@@ -466,7 +466,7 @@ if (found_app_n2v6()){
 if (found_app_nelink()){
 	tabtitle[25] = new Array("", "NE组网");
 }
-if (found_app_hxsdwan()){
+if (found_app_hxwan()){
 	tabtitle[29] = new Array("", "HXSDWAN");
 }
 if (found_app_etink()){
@@ -588,7 +588,7 @@ if (found_app_nelink()){
 	nelink_array = new Array("","Advanced_nelink.asp");
 	tablink[28] = (nelink_array);
 }
-if (found_app_hxsdwan()){
+if (found_app_hxwan()){
 	hxsdwan_array = new Array("","Advanced_hxsdwan.asp");
 	tablink[29] = (hxsdwan_array);
 }
@@ -702,7 +702,7 @@ if (found_app_nelink()){
 	menuL2_title.push("NE组网");
 } else menuL2_title.push("");
 
-if (found_app_hxsdwan()){
+if (found_app_hxwan()){
 	menuL2_title.push("HXSDWAN");
 } else menuL2_title.push("");
 
@@ -797,8 +797,8 @@ if (found_app_n2v6()){
 if (found_app_nelink()){
 	menuL2_link.push(nelink_array[1]);
 } else menuL2_link.push("");
-if (found_app_hxsdwan()){
-	menuL2_link.push(hxsdwan_array[1]);
+if (found_app_hxwan()){
+	menuL2_link.push(hxwan_array[1]);
 } else menuL2_link.push("");
 if (found_app_etink()){
 	menuL2_link.push(etink_array[1]);
