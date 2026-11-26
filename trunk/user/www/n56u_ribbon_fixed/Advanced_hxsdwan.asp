@@ -59,7 +59,7 @@ var isMenuopen = 0;
 function initial(){
 	show_banner(2);
 	show_menu(5, 17, 0);
-	showROUTEList();
+	showINROUList();
 	fill_status(hxwan_status());
 	show_footer();
 
