@@ -54,11 +54,12 @@ if(m_routelist.length > 0){
 		m_routelist[i][mroutelist_ifield] = i;
 	}
 }
+
 var isMenuopen = 0;
 function initial(){
 	show_banner(2);
-	show_menu(5,33,0);
-	showINROUList();
+	show_menu(5, 17, 0);
+	showROUTEList();
 	fill_status(hxwan_status());
 	show_footer();
 
