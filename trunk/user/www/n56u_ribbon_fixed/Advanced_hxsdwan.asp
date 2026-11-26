@@ -59,7 +59,7 @@ var isMenuopen = 0;
 function initial(){
 	show_banner(2);
 	show_menu(5, 17, 0);
-	showINROUList();
+	showROUListi();
 	fill_status(hxwan_status());
 	show_footer();
 
@@ -197,7 +197,7 @@ function markrouteRULES(o, c, b) {
 	return true;
 }
 
-function showINROUList(){
+function showROUListi(){
 	var code = '<table width="100%" cellspacing="0" cellpadding="4" class="table table-list">';
 	if(m_inroulist.length == 0)
 		code +='<tr><td colspan="5" style="text-align: center;"><div class="alert alert-info"><#IPConnection_VSList_Norule#></div></td></tr>';
