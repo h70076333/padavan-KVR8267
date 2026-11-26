@@ -57,12 +57,10 @@ if(m_routelist.length > 0){
 var isMenuopen = 0;
 function initial(){
 	show_banner(2);
-	show_menu(5,33,0);
+	show_menu(5, 17, 0);
+	showTOROUList();
 	fill_status(hxwan_status());
-	showMRULESList();
 	show_footer();
-	if (!login_safe())
-        		textarea_scripts_enabled(0);
 
 }
 
