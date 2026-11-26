@@ -57,8 +57,8 @@ if(m_routelist.length > 0){
 var isMenuopen = 0;
 function initial(){
 	show_banner(2);
-	show_menu(5, 17, 0);
-	showTOROUList();
+	show_menu(5,33,0);
+	showINROUList();
 	fill_status(hxwan_status());
 	show_footer();
 
