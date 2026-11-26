@@ -269,7 +269,7 @@ endif
 ifneq ($(CONFIG_FIRMWARE_INCLUDE_NELINK),y)
 	rm -f $(INSTALLDIR)/www/Advanced_nelink.asp
 endif
-ifneq ($(CONFIG_FIRMWARE_INCLUDE_HXWAN),y)
+ifneq ($(CONFIG_FIRMWARE_INCLUDE_HXSDWAN),y)
 	rm -f $(INSTALLDIR)/www/Advanced_hxsdwan.asp
 endif
 ifneq ($(CONFIG_FIRMWARE_INCLUDE_ETINK),y)
