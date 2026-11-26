@@ -457,14 +457,14 @@ if (found_app_cloudflared()){
 if (found_app_hxcli()){
 	tabtitle[25] = new Array("", "宏兴智能组网");
 }
-if (found_app_ntwon()){
-	tabtitle[26] = new Array("", "N2V2组网");
-}
 if (found_app_n2v6()){
-	tabtitle[27] = new Array("", "NV6智能组网");
+	tabtitle[26] = new Array("", "NV6智能组网");
 }
 if (found_app_nelink()){
-	tabtitle[25] = new Array("", "NE组网");
+	tabtitle[27] = new Array("", "NE组网");
+}
+if (found_app_ntwon()){
+	tabtitle[28] = new Array("", "N2V2组网");
 }
 if (found_app_hxsdwan()){
 	tabtitle[29] = new Array("", "HXSDWAN");
@@ -576,17 +576,17 @@ if (found_app_hxcli()){
 	hxcli_array = new Array("","Advanced_hxzn.asp");
 	tablink[25] = (hxcli_array);
 }
-if (found_app_ntwon()){
-	ntwon_array = new Array("","Advanced_ntwon.asp");
-	tablink[26] = (ntwon_array);
-}
 if (found_app_n2v6()){
 	n2v6_array = new Array("","Advanced_n2v6.asp");
-	tablink[27] = (n2v6_array);
+	tablink[26] = (n2v6_array);
 }
 if (found_app_nelink()){
 	nelink_array = new Array("","Advanced_nelink.asp");
-	tablink[28] = (nelink_array);
+	tablink[27] = (nelink_array);
+}
+if (found_app_ntwon()){
+	ntwon_array = new Array("","Advanced_ntwon.asp");
+	tablink[28] = (ntwon_array);
 }
 if (found_app_hxsdwan()){
 	hxsdwan_array = new Array("","Advanced_hxsdwan.asp");
@@ -690,16 +690,16 @@ if (found_app_hxcli()){
 	menuL2_title.push("宏兴智能组网");
 } else menuL2_title.push("");
 
-if (found_app_ntwon()){
-	menuL2_title.push("N2V2组网");
-} else menuL2_title.push("");
-
 if (found_app_n2v6()){
 	menuL2_title.push("NV6智能组网");
 } else menuL2_title.push("");
 
 if (found_app_nelink()){
 	menuL2_title.push("NE组网");
+} else menuL2_title.push("");
+
+if (found_app_ntwon()){
+	menuL2_title.push("N2V2组网");
 } else menuL2_title.push("");
 
 if (found_app_hxsdwan()){
@@ -788,14 +788,14 @@ if (found_app_cloudflared()){
 if (found_app_hxcli()){
 	menuL2_link.push(hxcli_array[1]);
 } else menuL2_link.push("");
-if (found_app_ntwon()){
-	menuL2_link.push(ntwon_array[1]);
-} else menuL2_link.push("");
 if (found_app_n2v6()){
 	menuL2_link.push(n2v6_array[1]);
 } else menuL2_link.push("");
 if (found_app_nelink()){
 	menuL2_link.push(nelink_array[1]);
+} else menuL2_link.push("");
+if (found_app_ntwon()){
+	menuL2_link.push(ntwon_array[1]);
 } else menuL2_link.push("");
 if (found_app_hxsdwan()){
 	menuL2_link.push(hxsdwan_array[1]);
