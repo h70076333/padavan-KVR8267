@@ -79,10 +79,10 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_HXCLI=y" >> .config #wirguard
         echo "CONFIG_FIRMWARE_INCLUDE_NTWON=y" >> .config #gecoac
         echo "CONFIG_FIRMWARE_INCLUDE_N2V6=y" >> .config #smartdns
-        echo "CONFIG_FIRMWARE_INCLUDE_NELINK=n" >> .config #smartdns
+        echo "CONFIG_FIRMWARE_INCLUDE_NELINK=y" >> .config #smartdns
         echo "CONFIG_FIRMWARE_INCLUDE_HXSDWAN=y" >> .config #ttyd
-        echo "CONFIG_FIRMWARE_INCLUDE_VNTS=n" >> .config #iperf3
-        echo "CONFIG_FIRMWARE_INCLUDE_ETINK=n" >> .config #socat
+        echo "CONFIG_FIRMWARE_INCLUDE_VNTS=y" >> .config #iperf3
+        echo "CONFIG_FIRMWARE_INCLUDE_ETINK=y" >> .config #socat
         #echo "CONFIG_FIRMWARE_INCLUDE_SQM=n" >> .config #SQM QOS
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
